@@ -1,0 +1,38 @@
+.container {
+  background-color: #25282c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 3px red solid;
+}
+
+.container h1 {
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.container .link {
+  list-style: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+.container .link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container .link a:hover {
+  color: red;
+}
+
+.container nav {
+  margin-top: 19px;
+  padding: 10px 30px;
+}
+/*# sourceMappingURL=Header.css.map */

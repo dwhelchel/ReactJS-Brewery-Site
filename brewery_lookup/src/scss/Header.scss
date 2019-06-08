@@ -1,0 +1,27 @@
+.container {
+    background-color: rgb(37, 40, 44);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 3px red solid;
+    h1 {
+        padding: 10px 30px;
+        color: #fff;
+    }
+    .link {
+        list-style: none;
+        display: inline;
+        padding: 0 20px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    nav {
+        margin-top: 19px;
+        padding: 10px 30px;
+    }
+}
