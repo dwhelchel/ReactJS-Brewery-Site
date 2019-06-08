@@ -3,7 +3,7 @@ import '../css/Header.css';
 
 function Header() {
     return (
-        <header className="container">
+        <header>
             <h1>Dakota's Brewery Lookup</h1>
             <nav>
                 <ul>

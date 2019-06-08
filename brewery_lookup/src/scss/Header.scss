@@ -1,13 +1,15 @@
-.container {
+header {
     background-color: rgb(37, 40, 44);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 3px red solid;
+    /* Heading */
     h1 {
         padding: 10px 30px;
         color: #fff;
     }
+    /* List items ("links") */
     .link {
         list-style: none;
         display: inline;
@@ -15,13 +17,15 @@
         a {
             color: #fff;
             text-decoration: none;
+            font-size: 18px;
             &:hover {
                 color: red;
             }
         }
     }
+    /* Navigation Bar */
     nav {
-        margin-top: 19px;
+        margin-top: 17px;
         padding: 10px 30px;
     }
 }

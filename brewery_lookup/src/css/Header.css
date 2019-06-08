@@ -1,4 +1,4 @@
-.container {
+header {
   background-color: #25282c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,30 +9,34 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 3px red solid;
+  /* Heading */
+  /* List items ("links") */
+  /* Navigation Bar */
 }
 
-.container h1 {
+header h1 {
   padding: 10px 30px;
   color: #fff;
 }
 
-.container .link {
+header .link {
   list-style: none;
   display: inline;
   padding: 0 20px;
 }
 
-.container .link a {
+header .link a {
   color: #fff;
   text-decoration: none;
+  font-size: 18px;
 }
 
-.container .link a:hover {
+header .link a:hover {
   color: red;
 }
 
-.container nav {
-  margin-top: 19px;
+header nav {
+  margin-top: 17px;
   padding: 10px 30px;
 }
 /*# sourceMappingURL=Header.css.map */

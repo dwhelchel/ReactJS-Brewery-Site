@@ -1,0 +1,42 @@
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #25282c;
+  color: #fff;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer h3 {
+  padding: 20px;
+  padding-right: 0;
+  font-size: 18px;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 32px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 30px;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer li {
+  display: inline;
+}
+/*# sourceMappingURL=Footer.css.map */

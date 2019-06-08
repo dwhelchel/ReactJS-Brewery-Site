@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    background-color: rgb(37, 40, 44);
+    color: #fff;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    justify-content: center;
+    h3 {
+        padding: 20px;
+        padding-right: 0;
+        font-size: 18px;
+    }
+    ul {
+        list-style: none;
+        margin-top: 32px;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 30px;
+        &:hover {
+            color: red;
+        }
+    }
+    li {
+        display: inline;
+    }
+}
