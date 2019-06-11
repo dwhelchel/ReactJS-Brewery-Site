@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Main.css';
 
 class Main extends Component {
     constructor(props) {
@@ -7,9 +8,16 @@ class Main extends Component {
 
         };
     }
+
+    componentDidMount() {
+
+    }
+
     render() {
         return (
-            <div>Hello</div>
+            <section className="main">
+                
+            </section>
         )
     }
 }

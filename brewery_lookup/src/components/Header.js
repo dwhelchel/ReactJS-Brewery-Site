@@ -4,7 +4,7 @@ import '../css/Header.css';
 function Header() {
     return (
         <header>
-            <h1>Dakota's Brewery Lookup</h1>
+            <h1><i className="fas fa-beer" style={{color: 'red'}}></i><span style={{color: 'red'}}> Dakota's</span> Brewery Lookup</h1>
             <nav>
                 <ul>
                     <li className="link"><a href="">Home</a></li>

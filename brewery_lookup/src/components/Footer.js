@@ -6,8 +6,8 @@ function Footer() {
         <footer>
             <h3>Get connected on my Github and LinkedIn!</h3>
             <ul>
-                <li><a href=""><i class="fab fa-github"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/dwhelchel" target="_blank"><i className="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dakota-whelchel/" target="_blank"><i className="fab fa-linkedin"></i></a></li>
             </ul>
         </footer>
     )

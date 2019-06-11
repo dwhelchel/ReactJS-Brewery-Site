@@ -2,6 +2,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #25282c;
   color: #fff;
   height: 100px;
@@ -9,20 +12,17 @@ footer {
   left: 0;
   right: 0;
   position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 footer h3 {
-  padding: 20px;
+  padding: 23px;
   padding-right: 0;
   font-size: 18px;
 }
 
 footer ul {
   list-style: none;
-  margin-top: 32px;
+  margin-top: 35px;
 }
 
 footer a {
