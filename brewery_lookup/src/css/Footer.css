@@ -12,6 +12,7 @@ footer {
   left: 0;
   right: 0;
   position: absolute;
+  border-top: 3px red solid;
 }
 
 footer h3 {
