@@ -1,9 +1,59 @@
-.container {
-  width: 48%;
-  height: 700px;
+.form-container {
+  min-height: 400px;
   background-color: white;
-  opacity: .7;
-  margin: 20px;
   border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 25px;
+  opacity: .9;
+}
+
+.form-container form {
+  text-align: center;
+  min-height: 400px;
+}
+
+.form-container form input[type="text"] {
+  padding: 10px;
+  margin: 20px;
+  width: 80%;
+  border-radius: 20px;
+  outline: none;
+  border-width: 2px;
+}
+
+.form-container form input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  margin: 20px;
+  width: 25%;
+  border-radius: 20px;
+  outline: none;
+  border-width: 2px;
+}
+
+.form-container .header-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-container .header-form-container h1 {
+  font-size: 40px;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /*# sourceMappingURL=Form.css.map */
