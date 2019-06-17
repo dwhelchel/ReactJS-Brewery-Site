@@ -44,4 +44,15 @@ header .header-container nav {
   margin-top: 17px;
   padding: 10px 30px;
 }
+
+@media screen and (max-width: 791px) {
+  .header-container {
+    display: block !important;
+    overflow: hidden;
+    text-align: center;
+  }
+  .header-container nav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Header.css.map */
