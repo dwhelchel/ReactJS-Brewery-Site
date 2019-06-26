@@ -35,6 +35,12 @@
   border-radius: 20px;
   outline: none;
   border-width: 2px;
+  font-size: 1em;
+}
+
+.form-container form input[type="submit"]:hover {
+  background-color: red;
+  color: #fff;
 }
 
 .form-container .header-form-container {

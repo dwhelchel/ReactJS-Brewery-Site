@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Dakota's Brewery Directory
 
-## Available Scripts
+My brewery directory is a front-end web application built using React. The application includes three navigation pages (Home, directory, about). 
+In the directory page, all breweries throughout the united states are displayed. If the user wishes to target a specific state, city, name, or type of brewery,
+he/she need simply fill out the form. 
 
-In the project directory, you can run:
+### Prerequisits
 
-### `npm start`
+For this project you'll need Node Package Manager (NPM) and Node
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### How to run
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Clone the repository to your local device like so:
+> git clone https://github.com/dwhelchel/ReactJS-Brewery-Site.git
 
-### `npm test`
+2. Simply navigate to the ReactJS-Brewery-Site directory and type this into the terminal:
+> npm start
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Motivation
 
-### `npm run build`
+When I turned the age of 21, my dad started to bring me to craft breweries to spend time together. I instantly loved the culture and art of craft beers. I wanted to practice my skills in front-end development with react, so I searched up a list of public APIs to use. To my luck, the [Open Brewery DB](https://www.openbrewerydb.org)
+caught my eye almost immediately.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Technologies Used
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- React JS
+- HMTL5
+- CSS3 
+- React Router
+- SASS
+- Open Brewery DB public API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Features
 
-### `npm run eject`
+This project includes the use of a form so that the user is able to search for specific states, cities, specific names, and types of breweries. This application is 
+also mobile friendly, with the help from CSS flexbox, em units, and percentage widths.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### API Reference
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The API used is the [Open Brewery DB](https://www.openbrewerydb.org)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Contribute
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Pull requests are always welcome in this application. Please make sure the PR describes the bug or feature being fixed/implemented.
 
-## Learn More
+### Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dakota Whelchel
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### License 
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the MIT license - please see LICENSE.md for details.

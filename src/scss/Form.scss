@@ -39,6 +39,11 @@
             appearance: none;
             @include inputStyle(10px, 20px, 25%);
             @include formInput();
+            font-size: 1em;
+            &:hover {
+                background-color: red;
+                color: #fff;
+            }
         }
     }
     .header-form-container {
