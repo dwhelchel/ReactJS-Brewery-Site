@@ -11,12 +11,12 @@ For this project you'll need Node Package Manager (NPM) and Node
 ### How to run
 
 1. Clone the repository to your local device like so:
-'''
+'''console
 git clone https://github.com/dwhelchel/ReactJS-Brewery-Site.git
 '''
 
 2. Simply navigate to the ReactJS-Brewery-Site directory and type this into the terminal:
-'''
+'''console
 npm start
 '''
 
