@@ -77,6 +77,11 @@
   padding: 10px 50px 10px 10px;
 }
 
+.main-container div form select:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 .main-container div form button {
   margin: 10px;
   font-size: 16px;
@@ -87,6 +92,7 @@
      -moz-appearance: none;
           appearance: none;
   border: 1px grey solid;
+  background-color: #ffd49b;
 }
 
 .main-container div form button:active:active {
@@ -95,7 +101,6 @@
 
 .main-container div form button:hover {
   cursor: pointer;
-  background-color: #ffd49b;
 }
 
 .main-container .black-screen {
