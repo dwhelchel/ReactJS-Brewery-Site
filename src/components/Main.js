@@ -97,7 +97,7 @@ class Main extends Component {
                             <select>
                                 <option value="">Select a city</option>    
                             </select>
-                            <button type="submit">Onward!</button>		
+                            <button type="submit">Search</button>		
                         </form>
                         {/* End of filter form */}
                     </div>

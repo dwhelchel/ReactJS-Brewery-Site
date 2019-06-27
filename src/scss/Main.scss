@@ -8,6 +8,7 @@
     font-size: $fontSize;
     width: 25%;
     border-radius: 6px;
+    outline: none;
 }
 
 .main-container {
@@ -49,17 +50,21 @@
             input {
                 @include form(16px);
                 border: 1px grey solid;
-                outline: none;
-                text-align: center;
+                padding-left: 10px;
             }
             select {
                 @include form(16px);
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -o-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+                padding: 10px 50px 10px 10px;
             }
             button {
                 @include form(16px);
                 appearance: none;
                 border: 1px grey solid;
-                outline: none;
                 &:active:active {
                     background-color: red;
                 }
