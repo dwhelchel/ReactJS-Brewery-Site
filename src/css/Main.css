@@ -6,7 +6,6 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
-  overflow-y: scroll;
 }
 
 .main-container h1 {
@@ -119,6 +118,9 @@
 
 /* Tablet View */
 @media screen and (max-width: 810px) {
+  .main-container {
+    overflow-y: scroll;
+  }
   .main-container h1 {
     font-size: 3em;
   }
@@ -136,6 +138,34 @@
   }
   .main-container div form select {
     width: 72%;
+  }
+}
+
+/* Phone View */
+@media screen and (max-width: 613px) {
+  .main-container {
+    overflow-y: scroll;
+  }
+  .main-container h1 {
+    font-size: 2em;
+  }
+  .main-container p {
+    font-size: 14px;
+  }
+  .main-container div form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container div form input {
+    width: 66.1%;
+  }
+  .main-container div form button {
+    width: 68%;
+  }
+  .main-container div form select {
+    width: 68%;
   }
 }
 /*# sourceMappingURL=Main.css.map */

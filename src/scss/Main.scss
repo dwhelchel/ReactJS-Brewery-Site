@@ -1,4 +1,5 @@
 $tablet-width : 72%;
+$phone-width : 68%;
 
 @mixin flex() {
     display: flex;
@@ -22,7 +23,6 @@ $tablet-width : 72%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    overflow-y: scroll;
     h1 {
         margin: 0;
         padding: 10px;
@@ -88,10 +88,10 @@ $tablet-width : 72%;
     }
 }
 
-
 /* Tablet View */
 @media screen and (max-width: 810px) {
     .main-container {
+        overflow-y: scroll;
         h1 {
             font-size: 3em;
         }
@@ -106,6 +106,33 @@ $tablet-width : 72%;
                 }
                 select {
                     width: $tablet-width;
+                }
+            }
+        }
+    }
+}
+
+/* Phone View */
+@media screen and (max-width: 613px) {
+    .main-container {
+        overflow-y: scroll;
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 14px;
+        }
+        div {
+            form {
+                flex-direction: column;
+                input {
+                    width: 66.1%;
+                }
+                button {
+                    width: $phone-width;
+                }
+                select {
+                    width: $phone-width;
                 }
             }
         }
