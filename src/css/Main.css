@@ -41,8 +41,7 @@
 .main-container div form {
   width: 810px;
   height: 70px;
-  background-color: #4b4b4b;
-  background-color: rgba(75, 75, 75, 0.6);
+  background-color: transparent;
   border-radius: 10px;
   padding: 20px, 0;
   display: -webkit-box;
