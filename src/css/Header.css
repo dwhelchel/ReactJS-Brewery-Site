@@ -54,7 +54,6 @@ header .header-container nav {
   .header-container {
     display: block !important;
     overflow: hidden;
-    text-align: center;
   }
   .header-container nav {
     display: none;
