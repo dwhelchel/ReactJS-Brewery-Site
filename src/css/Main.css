@@ -1,7 +1,7 @@
 .main-container {
   height: 550px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/beer-showcase.jpeg") no-repeat top;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/beer-showcase.jpeg") no-repeat top;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/beer-showcase.jpeg") no-repeat 50% 16%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/beer-showcase.jpeg") no-repeat 50% 16%;
   background-size: cover;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -82,12 +82,13 @@
   outline: none;
 }
 
-.main-container div form button:active {
+.main-container div form button:active:active {
   background-color: red;
 }
 
 .main-container div form button:hover {
   cursor: pointer;
+  background-color: #ffd49b;
 }
 
 .main-container .black-screen {

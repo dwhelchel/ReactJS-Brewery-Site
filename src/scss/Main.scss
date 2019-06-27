@@ -12,7 +12,7 @@
 
 .main-container {
     height: 550px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/beer-showcase.jpeg') no-repeat top;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/beer-showcase.jpeg') no-repeat 50% 16%;
     background-size: cover;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -60,11 +60,12 @@
                 appearance: none;
                 border: 1px grey solid;
                 outline: none;
-                &:active {
+                &:active:active {
                     background-color: red;
                 }
                 &:hover {
                     cursor: pointer;
+                    background-color: rgb(255, 212, 155);
                 }
             }
         }
