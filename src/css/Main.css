@@ -1,11 +1,12 @@
 .main-container {
-  height: 550px;
+  min-height: 570px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/beer-showcase.jpeg") no-repeat 50% 16%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/beer-showcase.jpeg") no-repeat 50% 16%;
   background-size: cover;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 .main-container h1 {
@@ -35,6 +36,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 70px;
 }
 
@@ -50,30 +54,35 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-container div form input {
-  margin: 10px;
+  margin: 7px;
   font-size: 16px;
   width: 25%;
   border-radius: 6px;
   outline: none;
+  padding: 10px 50px 10px 10px;
   border: 1px grey solid;
-  padding-left: 10px;
+  padding-right: 0;
+  width: 24.2%;
 }
 
 .main-container div form select {
-  margin: 10px;
+  margin: 7px;
   font-size: 16px;
   width: 25%;
   border-radius: 6px;
   outline: none;
+  padding: 10px 50px 10px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  padding: 10px 50px 10px 10px;
 }
 
 .main-container div form select:hover {
@@ -82,16 +91,18 @@
 }
 
 .main-container div form button {
-  margin: 10px;
-  font-size: 16px;
+  margin: 7px;
+  font-size: 20px;
   width: 25%;
   border-radius: 6px;
   outline: none;
+  padding: 10px 50px 10px 10px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 1px grey solid;
   background-color: #ffd49b;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
 }
 
 .main-container div form button:active:active {
@@ -104,5 +115,27 @@
 
 .main-container .black-screen {
   background-color: #000;
+}
+
+/* Tablet View */
+@media screen and (max-width: 810px) {
+  .main-container h1 {
+    font-size: 3em;
+  }
+  .main-container div form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container div form input {
+    width: 70.4%;
+  }
+  .main-container div form button {
+    width: 72%;
+  }
+  .main-container div form select {
+    width: 72%;
+  }
 }
 /*# sourceMappingURL=Main.css.map */

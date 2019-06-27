@@ -1,23 +1,28 @@
+$tablet-width : 72%;
+
 @mixin flex() {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 @mixin form($fontSize) {
-    margin: 10px;
+    margin: 7px;
     font-size: $fontSize;
     width: 25%;
     border-radius: 6px;
     outline: none;
+    padding: 10px 50px 10px 10px;
 }
 
 .main-container {
-    height: 550px;
+    min-height: 570px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/beer-showcase.jpeg') no-repeat 50% 16%;
     background-size: cover;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
+    overflow-y: scroll;
     h1 {
         margin: 0;
         padding: 10px;
@@ -49,7 +54,8 @@
             input {
                 @include form(16px);
                 border: 1px grey solid;
-                padding-left: 10px;
+                padding-right: 0;
+                width: 24.2%
             }
             select {
                 @include form(16px);
@@ -58,16 +64,16 @@
                 -o-appearance: none;
                 -ms-appearance: none;
                 appearance: none;
-                padding: 10px 50px 10px 10px;
                 &:hover {
                     cursor: grab;
                 }
             }
             button {
-                @include form(16px);
+                @include form(20px);
                 appearance: none;
-                border: 1px grey solid;
                 background-color: rgb(255, 212, 155);
+                padding-top: 7.5px;
+                padding-bottom: 7.5px;
                 &:active:active {
                     background-color: red;
                 }
@@ -82,6 +88,26 @@
     }
 }
 
-@media screen and (max-width: 790px) {
 
+/* Tablet View */
+@media screen and (max-width: 810px) {
+    .main-container {
+        h1 {
+            font-size: 3em;
+        }
+        div {
+            form {
+                flex-direction: column;
+                input {
+                    width: 70.4%;
+                }
+                button {
+                    width: $tablet-width;
+                }
+                select {
+                    width: $tablet-width;
+                }
+            }
+        }
+    }
 }
