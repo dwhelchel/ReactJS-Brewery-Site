@@ -1,1 +1,92 @@
-/* No CSS *//*# sourceMappingURL=Main.css.map */
+.main-container {
+  height: 550px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/beer-showcase.jpeg") no-repeat top;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/beer-showcase.jpeg") no-repeat top;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.main-container h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 2em;
+  color: #fff;
+  font-size: 4em;
+  font-style: italic;
+}
+
+.main-container p {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-size: 20px;
+}
+
+.main-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 70px;
+}
+
+.main-container div form {
+  width: 810px;
+  height: 70px;
+  background-color: #4b4b4b;
+  background-color: rgba(75, 75, 75, 0.6);
+  border-radius: 10px;
+  padding: 20px, 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container div form input {
+  margin: 10px;
+  font-size: 16px;
+  width: 25%;
+  border-radius: 6px;
+  border: 1px grey solid;
+  outline: none;
+  text-align: center;
+}
+
+.main-container div form select {
+  margin: 10px;
+  font-size: 16px;
+  width: 25%;
+  border-radius: 6px;
+}
+
+.main-container div form button {
+  margin: 10px;
+  font-size: 16px;
+  width: 25%;
+  border-radius: 6px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px grey solid;
+  outline: none;
+}
+
+.main-container div form button:active {
+  background-color: red;
+}
+
+.main-container div form button:hover {
+  cursor: pointer;
+}
+
+.main-container .black-screen {
+  background-color: #000;
+}
+/*# sourceMappingURL=Main.css.map */

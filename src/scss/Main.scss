@@ -1,0 +1,75 @@
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin form($fontSize) {
+    margin: 10px;
+    font-size: $fontSize;
+    width: 25%;
+    border-radius: 6px;
+}
+
+.main-container {
+    height: 550px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/beer-showcase.jpeg') no-repeat top;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    h1 {
+        margin: 0;
+        padding: 0;
+        padding-top: 2em;
+        color: #fff;
+        font-size: 4em;
+        font-style: italic;
+    }
+    p {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 2em;
+        font-size: 20px;
+    }
+    div {
+        @include flex();
+        padding-top: 70px;
+        form {
+            width: 810px;
+            height: 70px;
+            background-color: rgb(75, 75, 75);
+            background-color: rgba(75, 75, 75, 0.6);
+            border-radius: 10px;
+            padding: 20px, 0;
+            @include flex();
+            input {
+                @include form(16px);
+                border: 1px grey solid;
+                outline: none;
+                text-align: center;
+            }
+            select {
+                @include form(16px);
+            }
+            button {
+                @include form(16px);
+                appearance: none;
+                border: 1px grey solid;
+                outline: none;
+                &:active {
+                    background-color: red;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .black-screen {
+        background-color: #000;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+}

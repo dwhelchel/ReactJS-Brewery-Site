@@ -5,7 +5,7 @@ function Header() {
     return (
         <header>
             <div className="header-container">
-                <h1><i className="fas fa-beer" style={{color: 'red'}}></i> Dakota's Brewery Directory</h1>
+                <h1><i className="fas fa-beer" style={{color: 'red', fontSize: '25px'}}></i> Dakota's Brewery Directory</h1>
                 <nav>
                     <ul>
                         <li className="link"><a href="">Home</a></li>
