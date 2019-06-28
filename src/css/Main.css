@@ -100,8 +100,11 @@
      -moz-appearance: none;
           appearance: none;
   background-color: #ffd49b;
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 10px;
+  font-size: 16px;
+  border: none;
 }
 
 .main-container div form button:active:active {
