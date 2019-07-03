@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Content from './Content';
 import '../css/Main.css';
 
+const breweryUrl = 'https://api.openbrewerydb.org/breweries';
+
 class Main extends Component {
 
     constructor(props) {
@@ -18,27 +20,51 @@ class Main extends Component {
     }
 
     // Get initial set of breweries for screen
-    componentDidMount() {
-        this.getItems();
-        console.log(this.breweries);
+    async componentDidMount() {
+        await this.getItems("");
     }
 
     // On submit of filter form, make another HTTP request with filters
-    handleSubmit(event) {
-        // Get results by name
-        this.getItems("?by_name=");
+    async handleSubmit() {
 
-        // Get results by state
-        this.getItems("?by_state=");
+        const name = this.state.name
+        const state = this.state.state
+        const city = this.state.city
 
-        // Get results by city
-        this.getItems("?by_city=");
+        // If the user enters a name, state, and city
+        if (name !== "" && state !== "" && city !== "") 
+            await this.getItems("?by_name=" + this.state.name + "&by_state=" + this.state.state + "&by_city=" + this.state.city)
+
+        // If the user enters a name and a state
+        else if (name !== "" && state !== "")
+            await this.getItems("?by_name=" + this.state.name + "&by_state=" + this.state.state);
+
+        // If the user enters a name and a city
+        else if (name !== "" && city !== "")
+            await this.getItems("?by_name=" + this.state.name + "&by_city=" + this.state.city);
+
+        // If the user enters a state and a city
+        else if (state !== "" && city !== "")
+            await this.getItems("?by_state=" + this.state.state + "&by_city=" + this.state.city);
+
+        // If the user enters a brewery name
+        else if (name !== "")
+            await this.getItems("?by_name=" + this.state.name)
+
+        // If the user enters a state
+        else if (state !== "")
+            await this.getItems("?by_state=" + this.state.state)
+
+        // If the user enters a city
+        else if (city !== "")
+            await this.getItems("?by_city=" + this.state.city)
+            
     }
 
-    async getItems() {
-        await fetch('https://api.openbrewerydb.org/breweries')
+    async getItems(queryString) {
+        await fetch(breweryUrl + queryString)
             .then(response => response.json())
-            .then(response => this.setState({ breweries: response }));
+            .then(response => this.setState({ breweries: response }))
     }
 
     render() {
