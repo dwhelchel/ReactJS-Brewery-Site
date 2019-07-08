@@ -5,13 +5,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #25282c;
+  background-color: black;
   color: #fff;
-  height: 100px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
   border-top: 3px red solid;
 }
 

@@ -1,12 +1,15 @@
 #backdrop {
-  background-color: #1f1f1f;
+  background-color: #2b2b2c;
   text-align: center;
   color: #fff;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 #backdrop > h1 {
   margin: 0;
-  padding-top: 20px;
+  padding: 0;
+  padding-top: 30px;
+  margin-bottom: 20px;
 }
 
 #backdrop .contentContainer {
@@ -20,6 +23,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 #backdrop .contentContainer .card {

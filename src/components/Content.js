@@ -16,7 +16,7 @@ class Content extends Component {
                                 <p>{item.city}, {item.state} {item.postal_code}</p>
                                 <h3>Phone Number</h3>
                                 <p>{item.phone}</p>
-                                <button><a href={item.website_url}>Website</a></button>
+                                <button><a href={item.website_url} target="_blank">Website</a></button>
                             </div>
                         )
                     })}

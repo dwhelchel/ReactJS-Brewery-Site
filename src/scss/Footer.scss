@@ -5,13 +5,8 @@
 
 footer {
     @include flexCenter();
-    background-color: rgb(37, 40, 44);
+    background-color: black;
     color: #fff;
-    height: 100px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
     border-top: 3px red solid;
     h3 {
         padding: 23px;
