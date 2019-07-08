@@ -1,0 +1,39 @@
+#backdrop {
+  background-color: #1f1f1f;
+  text-align: center;
+  color: #fff;
+}
+
+#backdrop > h1 {
+  margin: 0;
+  padding-top: 20px;
+}
+
+#backdrop .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#backdrop .contentContainer .card {
+  margin: 20px;
+  width: 300px;
+  height: 350px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+}
+
+#backdrop .contentContainer .card > h1 {
+  margin: 0;
+  padding: 10px 10px;
+  font-size: 24px;
+}
+/*# sourceMappingURL=Content.css.map */

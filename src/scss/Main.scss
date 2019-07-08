@@ -23,6 +23,7 @@ $phone-width : 68%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
+    border-bottom: 3px red solid;
     h1 {
         margin: 0;
         padding: 10px;
@@ -71,14 +72,15 @@ $phone-width : 68%;
             button {
                 @include form(20px);
                 appearance: none;
-                background-color: rgb(255, 212, 155);
+                color: #fff;
+                background-color: red;
                 padding-top: 11px;
-                padding-bottom: 11px;
+                padding-bottom: 12px;
                 padding-right: 10px;
                 font-size: 16px;
                 border: none;
                 &:active:active {
-                    background-color: red;
+                    background-color: white;
                 }
                 &:hover {
                     cursor: pointer;
