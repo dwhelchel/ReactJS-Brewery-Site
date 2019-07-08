@@ -154,12 +154,11 @@ class Main extends Component {
                     </div>
                 </div>
                 <div>
-                    <Content breweries={this.breweries} />
+                    <Content breweries={this.state.breweries} />
                 </div>
             </div>
         )
     }
 }
-
 
 export default Main;
