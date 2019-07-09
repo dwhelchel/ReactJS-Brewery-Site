@@ -109,7 +109,7 @@
   border: none;
 }
 
-.main-container div form button:active:active {
+.main-container div form button:active {
   background-color: white;
 }
 
