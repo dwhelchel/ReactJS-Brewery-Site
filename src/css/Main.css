@@ -7,26 +7,16 @@
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
   border-bottom: 3px red solid;
-}
-
-.main-container h1 {
-  margin: 0;
-  padding: 10px;
-  padding-top: 2em;
-  color: #fff;
-  font-size: 4em;
-  font-style: italic;
-  padding-bottom: 0;
-  padding-left: 5px;
-}
-
-.main-container p {
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 2em;
-  font-size: 20px;
-  padding: 10px;
-  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .main-container div {
@@ -121,6 +111,39 @@
   background-color: #000;
 }
 
+.main-container #showcase-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.main-container #showcase-container #title-container {
+  display: block;
+  padding: 0;
+}
+
+.main-container #showcase-container #title-container h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 4rem;
+  font-style: italic;
+  padding-bottom: 0;
+  padding-left: 5px;
+}
+
+.main-container #showcase-container #title-container p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.main-container #form-container form {
+  height: 5rem;
+}
+
 .selectMenu__control {
   height: 50px;
 }
@@ -130,17 +153,21 @@
   .main-container {
     overflow-y: scroll;
   }
-  .main-container h1 {
-    font-size: 3em;
+  .main-container #title-container h1 {
+    font-size: 3em !important;
+  }
+  .main-container #title-container p {
+    font-size: 1em !important;
   }
   .main-container div form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 12rem !important;
   }
   .main-container div form input {
-    width: 70.4%;
+    width: 70%;
   }
   .main-container div form button {
     width: 72%;
@@ -151,15 +178,15 @@
 }
 
 /* Phone View */
-@media screen and (max-width: 613px) {
+@media screen and (max-width: 620px) {
   .main-container {
     overflow-y: scroll;
   }
-  .main-container h1 {
-    font-size: 2em;
+  .main-container #title-container h1 {
+    font-size: 1.55em !important;
   }
-  .main-container p {
-    font-size: 14px;
+  .main-container #title-container p {
+    font-size: 0.8rem !important;
   }
   .main-container div form {
     -webkit-box-orient: vertical;
@@ -168,7 +195,7 @@
             flex-direction: column;
   }
   .main-container div form input {
-    width: 66.1%;
+    width: 65%;
   }
   .main-container div form button {
     width: 68%;

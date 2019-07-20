@@ -24,24 +24,10 @@ $phone-width : 68%;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
     border-bottom: 3px red solid;
-    h1 {
-        margin: 0;
-        padding: 10px;
-        padding-top: 2em;
-        color: #fff;
-        font-size: 4em;
-        font-style: italic;
-        padding-bottom: 0;
-        padding-left: 5px;
-    }
-    p {
-        color: #fff;
-        font-weight: bold;
-        margin-bottom: 2em;
-        font-size: 20px;
-        padding: 10px;
-        padding-top: 0;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     div {
         @include flex();
         padding-top: 70px;
@@ -91,6 +77,36 @@ $phone-width : 68%;
     .black-screen {
         background-color: #000;
     }
+    #showcase-container {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        padding: 80px 0;
+        #title-container {
+            display: block;
+            padding: 0;
+            h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 4rem;
+                font-style: italic;
+                padding-bottom: 0;
+                padding-left: 5px;
+            }
+            p {
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.2em;
+                padding: 10px;
+                padding-top: 0;
+            }
+        }
+    }
+    #form-container {
+        form {
+            height: 5rem;
+        }
+    }
 }
 
 .selectMenu__control {
@@ -101,14 +117,20 @@ $phone-width : 68%;
 @media screen and (max-width: 810px) {
     .main-container {
         overflow-y: scroll;
-        h1 {
-            font-size: 3em;
+        #title-container {
+            h1 {
+                font-size: 3em !important;
+            }
+            p {
+                font-size: 1em !important;
+            }
         }
         div {
             form {
                 flex-direction: column;
+                height: 12rem !important;
                 input {
-                    width: 70.4%;
+                    width: 70%;
                 }
                 button {
                     width: $tablet-width;
@@ -122,20 +144,22 @@ $phone-width : 68%;
 }
 
 /* Phone View */
-@media screen and (max-width: 613px) {
+@media screen and (max-width: 620px) {
     .main-container {
         overflow-y: scroll;
-        h1 {
-            font-size: 2em;
-        }
-        p {
-            font-size: 14px;
+        #title-container {
+            h1 {
+                font-size: 1.55em !important;
+            }
+            p {
+                font-size: 0.8rem !important;
+            }
         }
         div {
             form {
                 flex-direction: column;
                 input {
-                    width: 66.1%;
+                    width: 65%;
                 }
                 button {
                     width: $phone-width;
