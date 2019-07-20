@@ -8,6 +8,7 @@
         padding: 0;
         padding-top: 30px;
         margin-bottom: 10px;
+        font-size: 2rem;
     }
     .contentContainer {
         display: flex;
@@ -65,6 +66,13 @@
                     }
                 }
             }
+        }
+    }
+    #error-screen {
+        p {
+            margin: 0;
+            font-size: 2rem;
+            padding: 1px 0 20px 0;
         }
     }
 }

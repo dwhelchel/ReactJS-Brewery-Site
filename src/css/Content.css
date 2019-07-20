@@ -10,6 +10,7 @@
   padding: 0;
   padding-top: 30px;
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 #backdrop .contentContainer {
@@ -91,5 +92,11 @@
 #backdrop .contentContainer .card #card-container button:active {
   background-color: red;
   border-color: red;
+}
+
+#backdrop #error-screen p {
+  margin: 0;
+  font-size: 2rem;
+  padding: 1px 0 20px 0;
 }
 /*# sourceMappingURL=Content.css.map */
