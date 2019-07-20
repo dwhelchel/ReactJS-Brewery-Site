@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import '../css/Content.css';
+import error from '../img/frown.jpg';
 
 class Content extends Component {
     render() {
         return (
             <div id="backdrop">
                 <h1>United States Craft Breweries</h1>
+
+                {this.props.breweries.length > 0 ? (
                 <div className="contentContainer">
                     {this.props.breweries.map((item, index) => {
 
@@ -30,7 +33,11 @@ class Content extends Component {
                             </div>
                         )
                     })}
+                </div>) : (
+                <div>
+                    <p><i class="far fa-frown"></i> Oh noes! There doesn't appear to be a matching brewery for your inputs!</p>
                 </div>
+                )}
             </div>
         )
     }
