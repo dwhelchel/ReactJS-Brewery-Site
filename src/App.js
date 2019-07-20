@@ -3,6 +3,8 @@ import './css/App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
+import About from './components/About';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 class App extends Component {
 
@@ -19,17 +21,22 @@ class App extends Component {
 
   render() {
       return(
-        <div>
-          {this.state.isLoading ? (
-            <h1>Loading...</h1>
-          ) : (
-            <div>
-              <Header />
-              <Main />
-              <Footer />
-            </div>
-          )}
-        </div>
+        <Router>
+          <div>
+            {this.state.isLoading ? (
+              <h1>Loading...</h1>
+            ) : (
+              <div>
+                <Header />
+                <Switch>
+                  <Route path="/" exact component={Main} />
+                  <Route path="/about" component={About} />
+                </Switch>
+                <Footer />
+              </div>
+            )}
+          </div>
+        </Router>
       )
   }
 }
