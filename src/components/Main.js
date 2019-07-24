@@ -60,6 +60,9 @@ class Main extends Component {
         else if (city !== "")
             await this.getItems("?by_city=" + this.state.city)
 
+        else if (city === "" && state === "" && name === "") 
+            await this.getItems("");
+
     }
 
     // Handle change in form and update state

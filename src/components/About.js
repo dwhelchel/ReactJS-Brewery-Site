@@ -1,9 +1,10 @@
 import React from 'react';
+import Description from './Description';
 
 function About() {
     return (
         <div>
-            Hello
+            <Description />
         </div>
     );
 }

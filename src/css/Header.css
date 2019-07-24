@@ -12,7 +12,7 @@ header .header-container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
-  border-bottom: 2px red solid;
+  border-bottom: 3px red solid;
   /* Heading */
   /* List items ("links") */
   /* Navigation Bar */

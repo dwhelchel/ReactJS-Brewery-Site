@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../css/Content.css';
-import error from '../img/frown.jpg';
 
 class Content extends Component {
     render() {
@@ -12,9 +11,13 @@ class Content extends Component {
                 <div className="contentContainer">
                     {this.props.breweries.map((item, index) => {
 
-                        if (number !== "") {
+                        var noPhone = false;
+
+                        if (item.phone !== "") {
                             var number = item.phone;
                             var newNum = "(" + number.substring(0, 3) + ") " + number.substring(3, 6) + "-" + number.substring(6, 10);
+                        } else {
+                            noPhone = true;
                         }
 
                         return (
@@ -26,9 +29,9 @@ class Content extends Component {
                                     <h3>Address</h3>
                                     <p>{item.street}</p>
                                     <p>{item.city}, {item.state} {item.postal_code}</p>
-                                    <h3>Phone Number</h3>
+                                    {!noPhone ? <h3>Phone Number</h3> : null}
                                     <p>{newNum}</p>
-                                    <button><a href={item.website_url} target="_blank">Website</a></button>
+                                    <button><a href={item.website_url} target="_blank" rel="noopener noreferrer">Website</a></button>
                                 </div>
                             </div>
                         )
