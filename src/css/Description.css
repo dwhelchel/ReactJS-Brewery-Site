@@ -3,17 +3,26 @@
 }
 
 #backdrop-container #description-container {
-  width: 40%;
+  width: 60%;
   margin: auto;
 }
 
-#backdrop-container #description-container p {
+#backdrop-container #description-container #paragraph-container {
+  padding: 20px 0;
+}
+
+#backdrop-container #description-container #paragraph-container p {
+  text-align: center;
   line-height: 1.5;
   margin: 0;
   color: #fff;
-  padding: 80px 20px;
+  padding: 10px;
   font-size: 18px;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: bold;
+}
+
+#backdrop-container #description-container #paragraph-container a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=Description.css.map */
