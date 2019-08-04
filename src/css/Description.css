@@ -11,7 +11,7 @@
   padding: 20px 0;
 }
 
-#backdrop-container #description-container #paragraph-container p {
+#backdrop-container #description-container #paragraph-container p, #backdrop-container #description-container #paragraph-container blockquote {
   text-align: center;
   line-height: 1.5;
   margin: 0;

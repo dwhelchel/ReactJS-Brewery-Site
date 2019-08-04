@@ -12,6 +12,10 @@ function Description() {
                     <p>I am very passionate about the craft beer community, so I wanted to create an application where
                         people like me could find and experience different craft breweries in each state. This project is powered
                         by the <a style={{color: 'red'}} href="https://www.openbrewerydb.org/" target="_blank" rel="noopener noreferrer">Open Brewery DB</a>.</p>
+                    <blockquote>
+                        Beer is proof that God loves us and wants us to be happy. <br />
+                        - Benjamin Franklin
+                    </blockquote>
                 </div>
             </div>
         </div>
