@@ -1,5 +1,13 @@
+@mixin colors($color) {
+    color: $color;
+    &:active {
+        color: #fff;
+    }
+}
+
 #backdrop-container {
     background-color: #222222;
+    font-family: 'Roboto', Helvetica, sans-serif;
     #description-container {
         width: 60%;
         margin: auto;
@@ -12,11 +20,49 @@
                 color: #fff;
                 padding: 10px;
                 font-size: 18px;
-                font-family: 'Roboto', Helvetica, sans-serif;
                 font-weight: bold;
             }
             a {
                 text-decoration: none;
+            }
+        }
+    }
+    #tech-showcase-container {
+        #main-tech-showcase {
+            text-align: center;
+            color: #fff;
+            h1 {
+                font-style: italic;
+                font-weight: bold;
+                margin: 0;
+            }
+            #icon-list-container {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                .icon-container {
+                    p {
+                        padding: 0;
+                        margin: 0;
+                        font-weight: bold;
+                    }
+                    a {
+                        font-size: 6rem;
+                        padding: 12px;
+                    }
+                    #html5 {
+                        @include colors(red);
+                    }
+                    #react {
+                        @include colors(skyblue);
+                    }
+                    #javascript {
+                        @include colors(#F0DB4F);
+                    }
+                    #css3 {
+                        @include colors(#264de4);
+                    }
+                }
             }
         }
     }

@@ -1,5 +1,6 @@
 #backdrop-container {
   background-color: #222222;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 #backdrop-container #description-container {
@@ -18,11 +19,74 @@
   color: #fff;
   padding: 10px;
   font-size: 18px;
-  font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: bold;
 }
 
 #backdrop-container #description-container #paragraph-container a {
   text-decoration: none;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase {
+  text-align: center;
+  color: #fff;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase h1 {
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container a {
+  font-size: 6rem;
+  padding: 12px;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #html5 {
+  color: red;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #html5:active {
+  color: #fff;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #react {
+  color: skyblue;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #react:active {
+  color: #fff;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #javascript {
+  color: #F0DB4F;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #javascript:active {
+  color: #fff;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #css3 {
+  color: #264de4;
+}
+
+#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #css3:active {
+  color: #fff;
 }
 /*# sourceMappingURL=Description.css.map */

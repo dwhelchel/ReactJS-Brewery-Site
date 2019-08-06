@@ -13,9 +13,32 @@ function Description() {
                         people like me could find and experience different craft breweries in each state. This project is powered
                         by the <a style={{color: 'red'}} href="https://www.openbrewerydb.org/" target="_blank" rel="noopener noreferrer">Open Brewery DB</a>.</p>
                     <blockquote>
-                        Beer is proof that God loves us and wants us to be happy. <br />
+                        "Beer is proof that God loves us and wants us to be happy." <br />
                         - Benjamin Franklin
                     </blockquote>
+                </div>
+            </div>
+            <div id="tech-showcase-container">
+                <div id="main-tech-showcase">
+                    <h1>Main Technologies</h1>
+                    <div id="icon-list-container">
+                        <div className="icon-container">
+                            <p>HTML 5</p>
+                            <a id="html5" href="https://en.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><i class="fab fa-html5"></i></a>
+                        </div>
+                        <div className="icon-container">
+                            <p>React</p>
+                            <a id="react" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><i class="fab fa-react"></i></a>
+                        </div>
+                        <div className="icon-container">
+                            <p>JavaScript</p>
+                            <a id="javascript" href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-js-square"></i></a>
+                        </div>
+                        <div className="icon-container">
+                            <p>CSS 3</p>
+                            <a id="css3" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" rel="noopener noreferrer"><i class="fab fa-css3-alt"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
