@@ -9,7 +9,7 @@
 }
 
 #backdrop-container #description-container #paragraph-container {
-  padding: 20px 0;
+  padding: 4px 0;
 }
 
 #backdrop-container #description-container #paragraph-container p, #backdrop-container #description-container #paragraph-container blockquote {
@@ -24,6 +24,14 @@
 
 #backdrop-container #description-container #paragraph-container a {
   text-decoration: none;
+}
+
+#backdrop-container #description-container h1 {
+  color: #fff;
+  margin: 0;
+  padding-top: 24px;
+  text-align: center;
+  font-style: italic;
 }
 
 #backdrop-container #tech-showcase-container #main-tech-showcase {

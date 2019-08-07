@@ -5,6 +5,7 @@ function Description() {
     return(
         <div id="backdrop-container">
             <div id="description-container">
+                <h1>Overview</h1>
                 <div id="paragraph-container">
                     <p>Welcome to Dakota's Brewery Directory! This web application allows the user to browse a list of
                         craft breweries in the United States. Although not all breweries in the United States are listed
