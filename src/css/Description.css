@@ -34,67 +34,90 @@
   font-style: italic;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase {
+#backdrop-container #tech-showcase-container .main-tech-showcase {
   text-align: center;
   color: #fff;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase h1 {
+#backdrop-container #tech-showcase-container .main-tech-showcase ul {
+  width: 100px;
+}
+
+#backdrop-container #tech-showcase-container .main-tech-showcase h1 {
   font-style: italic;
   font-weight: bold;
   margin: 0;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px;
+  padding-bottom: 10px;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container p {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container p {
   padding: 0;
   margin: 0;
   font-weight: bold;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container a {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container a {
   font-size: 6rem;
   padding: 12px;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #html5 {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #html5 {
   color: red;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #html5:active {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #html5:active {
   color: #fff;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #react {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #react {
   color: skyblue;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #react:active {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #react:active {
   color: #fff;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #javascript {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #javascript {
   color: #F0DB4F;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #javascript:active {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #javascript:active {
   color: #fff;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #css3 {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #css3 {
   color: #264de4;
 }
 
-#backdrop-container #tech-showcase-container #main-tech-showcase #icon-list-container .icon-container #css3:active {
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #css3:active {
+  color: #fff;
+}
+
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #sass {
+  color: #cd6799;
+}
+
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #sass:active {
+  color: #fff;
+}
+
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #git {
+  color: #f1502f;
+}
+
+#backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container .icon-container #git:active {
   color: #fff;
 }
 /*# sourceMappingURL=Description.css.map */

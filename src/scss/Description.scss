@@ -35,18 +35,23 @@
         }
     }
     #tech-showcase-container {
-        #main-tech-showcase {
+        .main-tech-showcase {
             text-align: center;
             color: #fff;
+            ul {
+                width: 100px;
+            }
             h1 {
                 font-style: italic;
                 font-weight: bold;
                 margin: 0;
             }
-            #icon-list-container {
+            .icon-list-container {
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 padding: 20px;
+                padding-bottom: 10px;
                 .icon-container {
                     p {
                         padding: 0;
@@ -68,6 +73,12 @@
                     }
                     #css3 {
                         @include colors(#264de4);
+                    }
+                    #sass {
+                        @include colors(#cd6799);
+                    }
+                    #git {
+                        @include colors(#f1502f);
                     }
                 }
             }

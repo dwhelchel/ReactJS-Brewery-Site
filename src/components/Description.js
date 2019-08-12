@@ -20,9 +20,9 @@ function Description() {
                 </div>
             </div>
             <div id="tech-showcase-container">
-                <div id="main-tech-showcase">
+                <div className="main-tech-showcase">
                     <h1>Main Technologies</h1>
-                    <div id="icon-list-container">
+                    <div className="icon-list-container">
                         <div className="icon-container">
                             <p>HTML 5</p>
                             <a id="html5" href="https://en.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><i class="fab fa-html5"></i></a>
@@ -38,6 +38,17 @@ function Description() {
                         <div className="icon-container">
                             <p>CSS 3</p>
                             <a id="css3" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" rel="noopener noreferrer"><i class="fab fa-css3-alt"></i></a>
+                        </div>
+                    </div>
+                    <h1>Other Technologies</h1>
+                    <div className="icon-list-container">
+                        <div className="icon-container">
+                            <p>Sass</p>
+                            <a id="sass" href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-sass"></i></a>
+                        </div>
+                        <div className="icon-container">
+                            <p>Git</p>
+                            <a id="git" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-git"></i></a>
                         </div>
                     </div>
                 </div>
