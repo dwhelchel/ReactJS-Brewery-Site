@@ -51,6 +51,7 @@ function Description() {
                             <a id="git" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-git"></i></a>
                         </div>
                     </div>
+                    <h1 id="thank-you">Thank you for visiting my site!</h1>
                 </div>
             </div>
         </div>

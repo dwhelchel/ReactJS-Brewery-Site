@@ -49,6 +49,12 @@
   margin: 0;
 }
 
+#backdrop-container #tech-showcase-container .main-tech-showcase #thank-you {
+  font-size: 40px;
+  color: red;
+  padding: 10px 0 22px 0;
+}
+
 #backdrop-container #tech-showcase-container .main-tech-showcase .icon-list-container {
   display: -webkit-box;
   display: -ms-flexbox;
