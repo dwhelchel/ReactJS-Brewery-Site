@@ -1,6 +1,7 @@
 header {
     background-color: #000;
     .header-container {
+        min-height: 6vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -39,9 +40,10 @@ header {
             padding: 0 30px;
         }
         /* Burger Menu */
-        #burger {
-            margin: 16px 12px;
+        .burger {
+            margin: 16px 14px;
             padding-top: 1px;
+            display: none;
             div {
                 width: 30px;
                 height: 5px;
@@ -55,10 +57,25 @@ header {
 /* Show hamburger screen */
 @media screen and (max-width: 791px) {
     .header-container {
-        display: flex !important;
         overflow: hidden;
         nav {
-            display: none;
+            position: absolute;
+            right: 0px;
+            height: 94vh;
+            top: 6vh;
+            width: 50%;
+            background-color: #000;
+            z-index: 1000;
+            padding: 0 !important;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .burger {
+            display: block !important;
         }
     }
 }

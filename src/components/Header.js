@@ -14,7 +14,7 @@ class Header extends Component {
                             <Link to="/about"><li className="link">About</li></Link>
                         </ul>
                     </nav>
-                    <div id="burger">
+                    <div className="burger">
                         <div className="line1"></div>
                         <div className="line2"></div>
                         <div className="line3"></div>

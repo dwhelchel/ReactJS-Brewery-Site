@@ -3,6 +3,7 @@ header {
 }
 
 header .header-container {
+  min-height: 6vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,12 +55,13 @@ header .header-container nav {
   padding: 0 30px;
 }
 
-header .header-container #burger {
-  margin: 16px 12px;
+header .header-container .burger {
+  margin: 16px 14px;
   padding-top: 1px;
+  display: none;
 }
 
-header .header-container #burger div {
+header .header-container .burger div {
   width: 30px;
   height: 5px;
   background-color: red;
@@ -69,13 +71,35 @@ header .header-container #burger div {
 /* Show hamburger screen */
 @media screen and (max-width: 791px) {
   .header-container {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
     overflow: hidden;
   }
   .header-container nav {
-    display: none;
+    position: absolute;
+    right: 0px;
+    height: 94vh;
+    top: 6vh;
+    width: 50%;
+    background-color: #000;
+    z-index: 1000;
+    padding: 0 !important;
+  }
+  .header-container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-container .burger {
+    display: block !important;
   }
 }
 /*# sourceMappingURL=Header.css.map */
