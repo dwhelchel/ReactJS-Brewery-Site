@@ -124,6 +124,7 @@
 }
 
 .main-container #showcase-container #title-container h1 {
+  text-shadow: 3px 3px 3px #000;
   margin: 0;
   color: #fff;
   font-size: 4rem;
@@ -133,6 +134,7 @@
 }
 
 .main-container #showcase-container #title-container p {
+  text-shadow: 3px 3px 3px #000;
   color: #fff;
   font-weight: bold;
   font-size: 1.2em;

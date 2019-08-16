@@ -17,6 +17,7 @@ header .header-container {
   /* Heading */
   /* List items ("links") */
   /* Navigation Bar */
+  /* Burger Menu */
 }
 
 header .header-container h1 {
@@ -32,6 +33,7 @@ header .header-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 header .header-container ul a {
@@ -52,10 +54,24 @@ header .header-container nav {
   padding: 0 30px;
 }
 
+header .header-container #burger {
+  margin: 16px 12px;
+  padding-top: 1px;
+}
+
+header .header-container #burger div {
+  width: 30px;
+  height: 5px;
+  background-color: red;
+  margin: 5px;
+}
+
 /* Show hamburger screen */
 @media screen and (max-width: 791px) {
   .header-container {
-    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     overflow: hidden;
   }
   .header-container nav {

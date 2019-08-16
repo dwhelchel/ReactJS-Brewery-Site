@@ -20,6 +20,7 @@ header {
         ul {
             list-style: none;
             display: flex;
+            padding: 0;
             a {
                 color: #fff;
                 text-decoration: none;
@@ -37,13 +38,24 @@ header {
             margin-top: 10px;
             padding: 0 30px;
         }
+        /* Burger Menu */
+        #burger {
+            margin: 16px 12px;
+            padding-top: 1px;
+            div {
+                width: 30px;
+                height: 5px;
+                background-color: red;
+                margin: 5px;
+            }
+        }   
     }
 }
 
 /* Show hamburger screen */
 @media screen and (max-width: 791px) {
     .header-container {
-        display: block !important;
+        display: flex !important;
         overflow: hidden;
         nav {
             display: none;
