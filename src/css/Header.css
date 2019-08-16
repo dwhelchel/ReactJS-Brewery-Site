@@ -80,7 +80,7 @@ header .header-container .burger div {
     overflow: hidden;
     /* Show nav bar after burger menu press */
   }
-  .header-container nav {
+  .header-container .nav {
     position: absolute;
     right: 0px;
     height: 94vh;
@@ -99,7 +99,7 @@ header .header-container .burger div {
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-  .header-container nav ul {
+  .header-container .nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -113,7 +113,7 @@ header .header-container .burger div {
     padding-top: 3rem;
     margin: 0;
   }
-  .header-container nav ul a {
+  .header-container .nav ul a {
     font-size: 2rem;
     padding: 12px 0;
     border-bottom: 2px red solid;
@@ -126,8 +126,7 @@ header .header-container .burger div {
 }
 
 .navigation-active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  translate: transform 0.5s ease-in;
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important;
 }
 /*# sourceMappingURL=Header.css.map */
