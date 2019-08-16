@@ -90,9 +90,14 @@ header .header-container .burger div {
     z-index: 1000;
     padding: 0 !important;
     margin: 0 !important;
+    /* Move off screen until burger press */
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    /* Move off screen until burger press */
+    /* Transitions the transform so the menu doesnt just pop up */
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
   .header-container nav ul {
     display: -webkit-box;
@@ -112,11 +117,17 @@ header .header-container .burger div {
     font-size: 2rem;
     padding: 12px 0;
     border-bottom: 2px red solid;
+    /* Allow for fading in menu items once pressed burger */
     opacity: 0;
-    /* Allow for fading in once pressed burger */
   }
   .header-container .burger {
     display: block !important;
   }
+}
+
+.navigation-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  translate: transform 0.5s ease-in;
 }
 /*# sourceMappingURL=Header.css.map */

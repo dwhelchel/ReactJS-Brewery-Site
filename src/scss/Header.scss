@@ -73,7 +73,10 @@ header {
             z-index: 1000;
             padding: 0 !important;
             margin: 0 !important;
-            transform: translateX(100%); /* Move off screen until burger press */
+            /* Move off screen until burger press */
+            transform: translateX(100%); 
+            /* Transitions the transform so the menu doesnt just pop up */
+            transition: transform 0.5s ease-in; 
             ul {
                 display: flex;
                 flex-direction: column;
@@ -84,7 +87,8 @@ header {
                     font-size: 2rem;
                     padding: 12px 0;
                     border-bottom: 2px red solid;
-                    opacity: 0; /* Allow for fading in once pressed burger */
+                    /* Allow for fading in menu items once pressed burger */
+                    opacity: 0; 
                 }
             }
         }
@@ -92,4 +96,9 @@ header {
             display: block !important;
         }
     }
+}
+
+.navigation-active {
+    transform: translateX(0%);
+    translate: transform 0.5s ease-in;
 }

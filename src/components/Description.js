@@ -25,30 +25,30 @@ function Description() {
                     <div className="icon-list-container">
                         <div className="icon-container">
                             <p>HTML 5</p>
-                            <a id="html5" href="https://en.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><i class="fab fa-html5"></i></a>
+                            <a id="html5" href="https://en.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><i className="fab fa-html5"></i></a>
                         </div>
                         <div className="icon-container">
                             <p>React</p>
-                            <a id="react" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><i class="fab fa-react"></i></a>
+                            <a id="react" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><i className="fab fa-react"></i></a>
                         </div>
                         <div className="icon-container">
                             <p>JavaScript</p>
-                            <a id="javascript" href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-js-square"></i></a>
+                            <a id="javascript" href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-js-square"></i></a>
                         </div>
                         <div className="icon-container">
                             <p>CSS 3</p>
-                            <a id="css3" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" rel="noopener noreferrer"><i class="fab fa-css3-alt"></i></a>
+                            <a id="css3" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" rel="noopener noreferrer"><i className="fab fa-css3-alt"></i></a>
                         </div>
                     </div>
                     <h1>Other Technologies</h1>
                     <div className="icon-list-container">
                         <div className="icon-container">
                             <p>Sass</p>
-                            <a id="sass" href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-sass"></i></a>
+                            <a id="sass" href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-sass"></i></a>
                         </div>
                         <div className="icon-container">
                             <p>Git</p>
-                            <a id="git" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-git"></i></a>
+                            <a id="git" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-git"></i></a>
                         </div>
                     </div>
                     <h1 id="thank-you">Thank you for visiting my site!</h1>
