@@ -63,6 +63,7 @@ header {
 @media screen and (max-width: 791px) {
     .header-container {
         overflow: hidden;
+        overflow-x: hidden;
         /* Show nav bar after burger menu press */
         .nav {
             position: absolute;
