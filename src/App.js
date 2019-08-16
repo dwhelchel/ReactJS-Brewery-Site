@@ -26,7 +26,7 @@ class App extends Component {
             {this.state.isLoading ? (
               <h1>Loading...</h1>
             ) : (
-              <div>
+              <div className="body">
                 <Header />
                 <Switch>
                   <Route path="/" exact component={Main} />

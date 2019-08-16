@@ -15,7 +15,7 @@ header .header-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
+  margin: 0;
   border-bottom: 3px red solid;
   font-family: 'Roboto', Helvetica, sans-serif;
   /* Heading */
@@ -58,6 +58,7 @@ header .header-container ul a:hover {
 header .header-container nav {
   margin-top: 10px;
   padding: 0 30px;
+  margin: 0;
 }
 
 header .header-container .burger {
@@ -77,22 +78,22 @@ header .header-container .burger div {
 }
 
 /* Show hamburger screen */
-@media screen and (max-width: 791px) {
+@media screen and (max-width: 769px) {
   .header-container {
     overflow: hidden;
-    overflow-x: hidden;
     /* Show nav bar after burger menu press */
   }
   .header-container .nav {
     position: absolute;
     right: 0px;
     height: 94vh;
-    top: 6.5vh;
+    top: 7.2vh;
     width: 50%;
     background-color: #000;
     z-index: 1000;
     padding: 0 !important;
     margin: 0 !important;
+    border-left: 3px red solid;
     /* Move off screen until burger press */
     -webkit-transform: translateX(100%);
             transform: translateX(100%);

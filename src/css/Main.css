@@ -17,6 +17,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .main-container div {

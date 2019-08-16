@@ -28,6 +28,7 @@ $phone-width : 68%;
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow-x: hidden;
     div {
         @include flex();
         padding-top: 70px;

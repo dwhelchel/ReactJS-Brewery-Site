@@ -6,7 +6,7 @@ header {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        margin: auto;
+        margin: 0;
         border-bottom: 3px red solid;
         font-family: 'Roboto', Helvetica, sans-serif;
         /* Heading */
@@ -41,6 +41,7 @@ header {
         nav {
             margin-top: 10px;
             padding: 0 30px;
+            margin: 0;
         }
         /* Burger Menu */
         .burger {
@@ -60,21 +61,21 @@ header {
 }
 
 /* Show hamburger screen */
-@media screen and (max-width: 791px) {
+@media screen and (max-width: 769px) {
     .header-container {
         overflow: hidden;
-        overflow-x: hidden;
         /* Show nav bar after burger menu press */
         .nav {
             position: absolute;
             right: 0px;
             height: 94vh;
-            top: 6.5vh;
+            top: 7.2vh;
             width: 50%;
             background-color: #000;
             z-index: 1000;
             padding: 0 !important;
             margin: 0 !important;
+            border-left: 3px red solid;
             /* Move off screen until burger press */
             transform: translateX(100%); 
             /* Transitions the transform so the menu doesnt just pop up */

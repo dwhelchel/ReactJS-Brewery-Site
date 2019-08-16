@@ -1,4 +1,8 @@
-.hello {
-  background: blue;
+body {
+  margin: 0;
+}
+
+.body {
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=App.css.map */
