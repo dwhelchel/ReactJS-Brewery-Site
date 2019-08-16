@@ -4,10 +4,23 @@ import '../css/Header.css';
 
 class Header extends Component {
     render() {
-
         function navigationSlide() {
+
+            const burger = document.querySelector('.burger');
             const nav = document.querySelector('.nav');
+            const links = document.querySelectorAll('.nav ul a');
+
+            // On burger press move the menu left/right
             nav.classList.toggle('navigation-active');
+            // Animate the links
+            links.forEach((link, index) => {
+                link.style.animation ? 
+                link.style.animation = '' :
+                link.style.animation = 'linkAnimation 0.5s ease forwards ' + (index / 7 + 0.5) + 's';
+            });
+            // Burger animation
+            burger.classList.toggle('toggle');
+
         }
 
         return (
