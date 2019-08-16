@@ -1,4 +1,6 @@
 .body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     position: fixed;
     height: 100%;

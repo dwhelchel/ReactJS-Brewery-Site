@@ -4,6 +4,7 @@ import '../css/Header.css';
 
 class Header extends Component {
     render() {
+        
         function navigationSlide() {
 
             const burger = document.querySelector('.burger');

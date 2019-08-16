@@ -38,7 +38,7 @@ class Content extends Component {
                     })}
                 </div>) : (
                 <div id="error-screen">
-                    <p><i class="far fa-frown"></i> Oh noes! There doesn't appear to be a matching brewery for your inputs!</p>
+                    <p><i className="far fa-frown"></i> Oh noes! There doesn't appear to be a matching brewery for your inputs!</p>
                     <p>Try entering a new brewery name, state, or city for another go!</p>
                 </div>
                 )}
