@@ -81,6 +81,8 @@ header .header-container .burger div {
 @media screen and (max-width: 769px) {
   .header-container {
     overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     /* Show nav bar after burger menu press */
   }
   .header-container .nav {
