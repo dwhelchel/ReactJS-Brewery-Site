@@ -5,6 +5,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
         margin: auto;
         border-bottom: 3px red solid;
         font-family: 'Roboto', Helvetica, sans-serif;
@@ -29,8 +30,10 @@ header {
                 margin: 0 10px;
                 padding-top: 0px;
                 font-size: 18px;
+                padding-bottom: 4px;
                 &:hover {
                     color: red;
+                    border-bottom: 2px red solid;
                 }
             }
         }
@@ -44,6 +47,7 @@ header {
             margin: 16px 14px;
             padding-top: 1px;
             display: none;
+            cursor: pointer;
             div {
                 width: 30px;
                 height: 5px;
@@ -58,20 +62,30 @@ header {
 @media screen and (max-width: 791px) {
     .header-container {
         overflow: hidden;
+        /* Show nav bar after burger menu press */
         nav {
             position: absolute;
             right: 0px;
             height: 94vh;
-            top: 6vh;
+            top: 6.5vh;
             width: 50%;
             background-color: #000;
             z-index: 1000;
             padding: 0 !important;
+            margin: 0 !important;
+            transform: translateX(100%); /* Move off screen until burger press */
             ul {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
+                padding-top: 3rem;
+                margin: 0;
+                a {
+                    font-size: 2rem;
+                    padding: 12px 0;
+                    border-bottom: 2px red solid;
+                    opacity: 0; /* Allow for fading in once pressed burger */
+                }
             }
         }
         .burger {

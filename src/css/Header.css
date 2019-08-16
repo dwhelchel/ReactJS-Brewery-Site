@@ -12,6 +12,9 @@ header .header-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   border-bottom: 3px red solid;
   font-family: 'Roboto', Helvetica, sans-serif;
@@ -44,10 +47,12 @@ header .header-container ul a {
   margin: 0 10px;
   padding-top: 0px;
   font-size: 18px;
+  padding-bottom: 4px;
 }
 
 header .header-container ul a:hover {
   color: red;
+  border-bottom: 2px red solid;
 }
 
 header .header-container nav {
@@ -59,6 +64,7 @@ header .header-container .burger {
   margin: 16px 14px;
   padding-top: 1px;
   display: none;
+  cursor: pointer;
 }
 
 header .header-container .burger div {
@@ -72,16 +78,21 @@ header .header-container .burger div {
 @media screen and (max-width: 791px) {
   .header-container {
     overflow: hidden;
+    /* Show nav bar after burger menu press */
   }
   .header-container nav {
     position: absolute;
     right: 0px;
     height: 94vh;
-    top: 6vh;
+    top: 6.5vh;
     width: 50%;
     background-color: #000;
     z-index: 1000;
     padding: 0 !important;
+    margin: 0 !important;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    /* Move off screen until burger press */
   }
   .header-container nav ul {
     display: -webkit-box;
@@ -91,12 +102,18 @@ header .header-container .burger div {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 3rem;
+    margin: 0;
+  }
+  .header-container nav ul a {
+    font-size: 2rem;
+    padding: 12px 0;
+    border-bottom: 2px red solid;
+    opacity: 0;
+    /* Allow for fading in once pressed burger */
   }
   .header-container .burger {
     display: block !important;
