@@ -69,13 +69,12 @@ header {
             position: absolute;
             right: 0px;
             height: 94vh;
-            top: 7.2vh;
+            top: 6.6vh;
             width: 50%;
             background-color: #000;
             z-index: 1000;
             padding: 0 !important;
             margin: 0 !important;
-            border-left: 3px red solid;
             /* Move off screen until burger press */
             transform: translateX(100%); 
             /* Transitions the transform so the menu doesnt just pop up */
