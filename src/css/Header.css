@@ -83,6 +83,7 @@ header .header-container .burger div {
     overflow: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    z-index: 1000;
     /* Show nav bar after burger menu press */
   }
   .header-container .nav {
@@ -92,7 +93,7 @@ header .header-container .burger div {
     top: 6.6vh;
     width: 50%;
     background-color: #000;
-    z-index: 1000000;
+    z-index: 1000;
     padding: 0 !important;
     margin: 0 !important;
     /* Move off screen until burger press */
