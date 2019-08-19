@@ -80,7 +80,7 @@ header .header-container .burger div {
 /* Show hamburger screen */
 @media screen and (max-width: 769px) {
   .header-container {
-    overflow: hidden;
+    overflow: visible;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     z-index: 1000;
