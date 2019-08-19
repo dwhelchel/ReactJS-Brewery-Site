@@ -93,7 +93,7 @@ header .header-container .burger div {
     top: 6.6vh;
     width: 50%;
     background-color: #000;
-    z-index: 1000;
+    z-index: 1000 !important;
     padding: 0 !important;
     margin: 0 !important;
     /* Move off screen until burger press */
