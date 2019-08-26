@@ -9,6 +9,9 @@ header {
         margin: 0;
         border-bottom: 3px red solid;
         font-family: 'Roboto', Helvetica, sans-serif;
+        #beer {
+            display: none;
+        }
         /* Heading */
         h1 {
             margin-top: 20px;
@@ -63,7 +66,6 @@ header {
 /* Show hamburger screen */
 @media screen and (max-width: 769px) {
     .header-container {
-        overflow: visible;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         z-index: 1000;
@@ -99,6 +101,13 @@ header {
         }
         .burger {
             display: block !important;
+        }
+        h1 {
+            display: none;
+        }
+        #beer {
+            display: block !important;
+            padding: 20px;
         }
     }
 }

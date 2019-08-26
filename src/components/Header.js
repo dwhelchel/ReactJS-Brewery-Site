@@ -28,6 +28,7 @@ class Header extends Component {
             <header>
                 <div className="header-container">
                     <h1><i className="fas fa-beer" style={{color: 'red', fontSize: '20px'}}></i><span style={{color: 'red'}}> Dakota's</span> Brewery Directory</h1>
+                    <i className="fas fa-beer" id="beer" style={{color: 'red', fontSize: '32px'}}></i>
                     <nav className="nav">
                         <ul>
                             <Link to="/"><li className="link">Home</li></Link>
