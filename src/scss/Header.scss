@@ -51,6 +51,7 @@ header {
             margin: 16px 14px;
             padding-top: 5px;
             display: none;
+            z-index: 1001;
             cursor: pointer;
             div {
                 width: 30px;
@@ -73,13 +74,14 @@ header {
         .nav {
             position: absolute;
             right: 0px;
-            height: 94vh;
+            height: 270px;
             top: 6.6vh;
             width: 50%;
             background-color: #000;
             z-index: 1000 !important;
             padding: 0 !important;
             margin: 0 !important;
+            border-bottom-left-radius: 25px;
             /* Move off screen until burger press */
             transform: translateX(100%); 
             /* Transitions the transform so the menu doesnt just pop up */
@@ -143,6 +145,7 @@ header {
     }
 }
 
+/* add sticky header */
 .sticky {
     position: fixed;
     top: 0;
