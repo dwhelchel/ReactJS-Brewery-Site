@@ -35,6 +35,7 @@
         }
     }
     #tech-showcase-container {
+        padding-top: 12px;
         .main-tech-showcase {
             text-align: center;
             color: #fff;
@@ -91,9 +92,42 @@
     }
 }
 
+// Tablet
 @media screen and (max-width: 769px) {
     #description-container {
        width: 80% !important;
        padding: 0;
+       #paragraph-container {
+           p {
+               text-align: left;
+           }
+       }
+    }
+}
+
+// Mobile L
+@media screen and (max-width: 426px) {
+    .icon-container {
+        a {
+            font-size: 4.5rem !important;
+        }
+    }
+}
+
+// Mobile M
+@media screen and (max-width: 376px) {
+    .icon-container {
+        a {
+            font-size: 3.5rem !important;
+        }
+    }
+}
+
+// Mobile S
+@media screen and (max-width: 321px) {
+    .icon-container {
+        a {
+            font-size: 3rem !important;
+        }
     }
 }

@@ -26,6 +26,7 @@ header {
             list-style: none;
             display: flex;
             padding: 0;
+            padding-top: 8px;
             a {
                 color: #fff;
                 text-decoration: none;
@@ -70,6 +71,7 @@ header {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         z-index: 1000;
+
         /* Show nav bar after burger menu press */
         .nav {
             position: absolute;

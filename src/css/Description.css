@@ -34,6 +34,10 @@
   font-style: italic;
 }
 
+#backdrop-container #tech-showcase-container {
+  padding-top: 12px;
+}
+
 #backdrop-container #tech-showcase-container .main-tech-showcase {
   text-align: center;
   color: #fff;
@@ -131,6 +135,27 @@
   #description-container {
     width: 80% !important;
     padding: 0;
+  }
+  #description-container #paragraph-container p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .icon-container a {
+    font-size: 4.5rem !important;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .icon-container a {
+    font-size: 3.5rem !important;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .icon-container a {
+    font-size: 3rem !important;
   }
 }
 /*# sourceMappingURL=Description.css.map */

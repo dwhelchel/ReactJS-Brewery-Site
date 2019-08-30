@@ -42,6 +42,7 @@ header .header-container ul {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  padding-top: 8px;
 }
 
 header .header-container ul a {

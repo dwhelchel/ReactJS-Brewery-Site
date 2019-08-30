@@ -19,14 +19,19 @@ class Header extends Component {
         window.removeEventListener('scroll', this.handleScroll);
     }
 
+    // On scroll stick header to the top fixed
     handleScroll() {
+
         var header = document.getElementById("header");
         var sticky = header.offsetTop;
+
+        // If the page scrolls past header, go sticky
         if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
         } else {
             header.classList.remove("sticky");
         }
+
     }
 
     // slide the nav bar on burger menu
@@ -38,12 +43,14 @@ class Header extends Component {
 
         // On burger press move the menu left/right
         nav.classList.toggle('navigation-active');
+
         // Animate the links
         links.forEach((link, index) => {
             link.style.animation ? 
             link.style.animation = '' :
             link.style.animation = 'linkAnimation 0.5s ease forwards ' + (index / 7 + 0.5) + 's';
         });
+
         // Burger animation
         burger.classList.toggle('toggle');
 
